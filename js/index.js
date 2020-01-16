@@ -47,3 +47,18 @@ snippet.setAttribute('src', siteContent["cta"]["img-src"]);
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+// let navBar = document.querySelector("header nav");
+// console.log(navBar);
+// navBar.textContent = (siteContent["nav"])
+
+
+//Cta section
+const ctaText = document.querySelector(".cta-text h1");
+ctaText.textContent = (siteContent["cta"]["h1"]);
+
+const ctaBtn = document.querySelector(".cta-text button");
+ctaBtn.textContent = (siteContent["cta"]["button"]);
+
+//Main-content section
+const featuresH4 = document.querySelector("h4");
+featuresH4.textContent = (siteContent["main-content"]["features-h4"]);
