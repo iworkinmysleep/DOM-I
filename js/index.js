@@ -47,6 +47,7 @@ snippet.setAttribute('src', siteContent["cta"]["img-src"]);
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+let footer = document.getElementsByTagName("footer");
 //Navigation
 let navBar = document.querySelectorAll("a");
 console.log(navBar);
@@ -90,6 +91,7 @@ paragraphs[8].textContent = (siteContent["footer"]["copyright"]);
 
 navBar.forEach(item => item.style.color = 'green');
 
-const footerAdd = document.createElement('h3');
+const footerAdd = document.createElement("h3");
 footerAdd.textContent = "Completed by Jason";
-footer.appendChild(footerAdd);
+footer[0].appendChild(footerAdd);
+console.log(footer)
