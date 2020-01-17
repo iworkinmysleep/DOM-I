@@ -47,18 +47,42 @@ snippet.setAttribute('src', siteContent["cta"]["img-src"]);
 let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-// let navBar = document.querySelector("header nav");
-// console.log(navBar);
-// navBar.textContent = (siteContent["nav"])
+//Navigation
+let navBar = document.querySelectorAll("a");
+console.log(navBar);
+navBar[0].textContent = (siteContent["nav"]["nav-item-1"])
+navBar[1].textContent = (siteContent["nav"]["nav-item-2"])
+navBar[2].textContent = (siteContent["nav"]["nav-item-3"])
+navBar[3].textContent = (siteContent["nav"]["nav-item-4"])
+navBar[4].textContent = (siteContent["nav"]["nav-item-5"])
+navBar[5].textContent = (siteContent["nav"]["nav-item-6"])
 
 
 //Cta section
 const ctaText = document.querySelector(".cta-text h1");
 ctaText.textContent = (siteContent["cta"]["h1"]);
-
+ctaText.style.whiteSpace = "pre";
 const ctaBtn = document.querySelector(".cta-text button");
 ctaBtn.textContent = (siteContent["cta"]["button"]);
 
 //Main-content section
-const featuresH4 = document.querySelector("h4");
-featuresH4.textContent = (siteContent["main-content"]["features-h4"]);
+const contentH4 = document.querySelectorAll("h4");
+contentH4[0].textContent = (siteContent["main-content"]["features-h4"]);
+contentH4[1].textContent = (siteContent["main-content"]["about-h4"]);
+contentH4[2].textContent = (siteContent["main-content"]["services-h4"]);
+contentH4[3].textContent = (siteContent["main-content"]["product-h4"]);
+contentH4[4].textContent = (siteContent["main-content"]["vision-h4"]);
+contentH4[5].textContent = (siteContent["contact"]["contact-h4"]);
+
+const paragraphs = document.querySelectorAll("p");
+paragraphs[0].textContent = (siteContent["main-content"]["features-content"]);
+paragraphs[1].textContent = (siteContent["main-content"]["about-content"]);
+paragraphs[2].textContent = (siteContent["main-content"]["services-content"]);
+paragraphs[3].textContent = (siteContent["main-content"]["product-content"]);
+paragraphs[4].textContent = (siteContent["main-content"]["vision-content"]);
+paragraphs[5].textContent = (siteContent["contact"]["address"]);
+paragraphs[6].textContent = (siteContent["contact"]["phone"]);
+paragraphs[7].textContent = (siteContent["contact"]["email"]);
+paragraphs[8].textContent = (siteContent["footer"]["copyright"]);
+
+navBar.forEach(item => item.style.color = 'green');
