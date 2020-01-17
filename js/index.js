@@ -62,6 +62,7 @@ navBar[5].textContent = (siteContent["nav"]["nav-item-6"])
 const ctaText = document.querySelector(".cta-text h1");
 ctaText.textContent = (siteContent["cta"]["h1"]);
 ctaText.style.whiteSpace = "pre";
+ctaText.textContent = "Dom\n Is\n Awesome"
 const ctaBtn = document.querySelector(".cta-text button");
 ctaBtn.textContent = (siteContent["cta"]["button"]);
 
@@ -80,9 +81,15 @@ paragraphs[1].textContent = (siteContent["main-content"]["about-content"]);
 paragraphs[2].textContent = (siteContent["main-content"]["services-content"]);
 paragraphs[3].textContent = (siteContent["main-content"]["product-content"]);
 paragraphs[4].textContent = (siteContent["main-content"]["vision-content"]);
-paragraphs[5].textContent = (siteContent["contact"]["address"]);
+paragraphs[5].style.whiteSpace = 'pre';
+paragraphs[5].textContent = "123 Way 456 Street\n Somewhere, USA";
 paragraphs[6].textContent = (siteContent["contact"]["phone"]);
 paragraphs[7].textContent = (siteContent["contact"]["email"]);
 paragraphs[8].textContent = (siteContent["footer"]["copyright"]);
 
+
 navBar.forEach(item => item.style.color = 'green');
+
+const footerAdd = document.createElement('h3');
+footerAdd.textContent = "Completed by Jason";
+footer.appendChild(footerAdd);
