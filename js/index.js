@@ -48,6 +48,8 @@ let middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 let footer = document.getElementsByTagName("footer");
+
+const docBody = document.querySelector(".container");
 //Navigation
 let navBar = document.querySelectorAll("a");
 console.log(navBar);
@@ -94,4 +96,9 @@ navBar.forEach(item => item.style.color = 'green');
 const footerAdd = document.createElement("h3");
 footerAdd.textContent = "Completed by Jason";
 footer[0].appendChild(footerAdd);
-console.log(footer)
+
+const border = document.createElement('section');
+border.style.height = '10px'
+border.style.border = '5px solid green';
+docBody.prepend(border);
+console.log(docBody)
