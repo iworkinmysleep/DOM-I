@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM\n Is\n Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -28,7 +28,7 @@ const siteContent = {
   },
   "contact": {
     "contact-h4" : "Contact",
-    "address" : "123 Way 456 Street Somewhere, USA",
+    "address" : "123 Way 456 Street\n Somewhere, USA",
     "phone" : "1 (888) 888-8888",
     "email" : "sales@greatidea.io",
   },
@@ -65,7 +65,6 @@ navBar[5].textContent = (siteContent["nav"]["nav-item-6"])
 const ctaText = document.querySelector(".cta-text h1");
 ctaText.textContent = (siteContent["cta"]["h1"]);
 ctaText.style.whiteSpace = "pre";
-ctaText.textContent = "Dom\n Is\n Awesome"
 const ctaBtn = document.querySelector(".cta-text button");
 ctaBtn.textContent = (siteContent["cta"]["button"]);
 
@@ -85,7 +84,7 @@ paragraphs[2].textContent = (siteContent["main-content"]["services-content"]);
 paragraphs[3].textContent = (siteContent["main-content"]["product-content"]);
 paragraphs[4].textContent = (siteContent["main-content"]["vision-content"]);
 paragraphs[5].style.whiteSpace = 'pre';
-paragraphs[5].textContent = "123 Way 456 Street\n Somewhere, USA";
+paragraphs[5].textContent = (siteContent["contact"]["address"]);
 paragraphs[6].textContent = (siteContent["contact"]["phone"]);
 paragraphs[7].textContent = (siteContent["contact"]["email"]);
 paragraphs[8].textContent = (siteContent["footer"]["copyright"]);
