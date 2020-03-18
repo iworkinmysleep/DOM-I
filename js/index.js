@@ -93,7 +93,7 @@ paragraphs[8].textContent = (siteContent["footer"]["copyright"]);
 navBar.forEach(item => item.style.color = 'green');
 
 const footerAdd = document.createElement("h3");
-footerAdd.textContent = "Completed by Jason";
+footerAdd.textContent = "Completed by Jason H";
 footer[0].appendChild(footerAdd);
 
 const border = document.createElement('section');
